@@ -35,7 +35,7 @@ Base_de_datos_mujeres<-subset(Base_de_datos_mujeres, select=c( ecivil, edad, eda
 #Se crea un modelo de regresión logistico binario
 Modelo <- glm(o1 ~ ecivil + edad + edad_squared + r1a_dummy + e6a + region + tot_per_h, family = binomial("logit"), data = Base_de_datos_mujeres)
 
-#Rsultados del modelo
+#Resultados del modelo
 summary(Modelo)
 
 #Vemos los efectos marginales para tener una comprensión más exacta de lo ocurrido
